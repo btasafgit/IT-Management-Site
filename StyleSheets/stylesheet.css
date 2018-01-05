@@ -3,10 +3,8 @@
 }
 
 
-#frame{
-    margin-top: 30px;
-}
-
-p{
-    margin: 100%;
+.users-col{
+    margin: 2%;
+    border: darkgray 2px solid;
+    border-radius: 2px;
 }
