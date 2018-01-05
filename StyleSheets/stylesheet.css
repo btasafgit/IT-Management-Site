@@ -26,3 +26,7 @@
     transition: all ease-in 10ms;
     transition: all ease-in 5ms;
 }
+
+.jumbotron{
+    margin-top: 70px;
+}
