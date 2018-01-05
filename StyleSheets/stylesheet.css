@@ -8,3 +8,21 @@
     border: darkgray 2px solid;
     border-radius: 2px;
 }
+
+/* .card-icon-middle{
+    position: 
+} */
+
+.card-icon-top {
+    opacity: 20%;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    margin-top: 10px; /* Added */
+}
+.card-icon-top:hover{
+    opacity: 100%;
+    color: green;
+    transition: all ease-in 10ms;
+    transition: all ease-in 5ms;
+}

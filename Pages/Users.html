@@ -7,63 +7,48 @@
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="../StyleSheets/font-awesome.css" />
     <link type="text/css" rel="stylesheet" href="../StyleSheets/stylesheet.css" />
-    <link type="text/css" rel="stylesheet" href="../StyleSheets/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="../StyleSheets/bs4/bootstrap.css" />
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=hebrew" rel="stylesheet">
 </head>
 <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                  <!-- Brand and toggle get grouped for better mobile display -->
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><i class="fa fa-first-order" aria-hidden="true"></i></span> IT Management</a>
-                  </div>
-              
-                  <!-- Collect the nav links, forms, and other content for toggling -->
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <!-- <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                      <li><a href="#">Link</a></li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Action</a></li>
-                          <li><a href="#">Another action</a></li>
-                          <li><a href="#">Something else here</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Separated link</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">One more separated link</a></li>
-                        </ul>
-                      </li>
-                    </ul> -->
-                    <!-- <form class="navbar-form navbar-left">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                      </div>
-                      <button type="submit" class="btn btn-default">Submit</button>
-                    </form> -->
-                    <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#">Link</a></li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="Pages/Users.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Manage Users</a></li>
-                          <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Manage Mailbox</a></li>
-                          <li><a href="#"><i class="fa fa-server" aria-hidden="true"></i> Manage Server</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Separated link</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-              </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../Index.html"><i class="fa fa-first-order" aria-hidden="true"></i></span> iManage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../Index.html"> Home<span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Manage Users</a>
+            <a class="dropdown-item" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Manage Mailbox</a>
+            <a class="dropdown-item" href="#"><i class="fa fa-server" aria-hidden="true"></i> Manage Server</a>
+            <!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a> -->
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#">disabled</a>
+        </li> -->
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">search</button>
+      </form>
+    </div>
+</nav>
+
+                
     <div class="container jumbotron">
         <h1>Users</h1>
 
@@ -75,25 +60,61 @@
             <li></li>
         </ul>
     </div>
+
     <div class="container">
-        <div class="row">
-            <div class="users-col col-md-3 col-sm-6 col-xs-12">Add new users w/ Mailbox</div>
-            <div class="users-col col-md-3 col-sm-6 col-xs-12">Change user details</div>
-            <div class="users-col col-md-3 col-sm-6 col-xs-12">Duplicate user (delete and create a new user w/ the same details)</div>
-            <div class="users-col col-md-3 col-sm-6 col-xs-12">Delete user (Send email with groups)</div>
+    <div class="card-group">
+        <div class="card">
+            <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+            <i class="fa fa-user-plus card-icon-top fa-5x" aria-hidden="true"></i>
+          <div class="card-body">
+            <h5 class="card-title">Add new users w/ Mailbox</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
         </div>
-
-        <div class="row">
-            <div class="users-col col-md-3 col-sm-6 col-xs-12">Add new users w/ Mailbox</div>
-            <div class="users-col col-md-3 col-sm-6 col-xs-12">Change user details</div>
-            <div class="users-col col-md-3 col-sm-6 col-xs-12">Duplicate user (delete and create a new user w/ the same details)</div>
-            <div class="users-col col-md-3 col-sm-6 col-xs-12">Delete user (Send email with groups)</div>
+        <div class="card">
+          <!-- <img class="card-img-top" src="..." alt="Card image cap">-->
+          <i class="fa fa-user card-icon-top fa-3x" aria-hidden="true">
+              <i class="fa fa-arrow-right card-icon-top" aria-hidden="true">
+                  <i class="fa fa-user-circle card-icon-top" aria-hidden="true"></i>
+              </i>
+          </i>
+          <div class="card-body">
+            <h5 class="card-title">Change user details</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <!-- <img class="card-img-top" src="..." alt="Card image cap">-->
+          <i class="fa fa-user card-icon-top fa-3x" aria-hidden="true">
+              <i class="fa fa-arrow-right card-icon-top" aria-hidden="true">
+                  <i class="fa fa-user-plus card-icon-top" aria-hidden="true"></i>
+              </i>
+          </i>
+          
+          
+          <div class="card-body">
+            <h5 class="card-title">Duplicate user</h5>
+            <p class="card-text">Duplicate user (delete and create a new user w/ the same details).</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+            <!-- <img class="card-img-top" src="..." alt="Card image cap">-->
+            <i class="fa fa-user-times card-icon-top fa-5x" aria-hidden="true"></i>
+            <div class="card-body">
+              <h5 class="card-title">Delete user</h5>
+              <p class="card-text">Delete user (Send email with groups)</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
-
+          </div>
+      </div>
     </div>
 
     <!-- # Java scripts section-->
-    <script src="../Scripts/jquery-2.2.4.js"></script>
-      <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="../Scripts/bs4/bootstrap.js"></script>
 </body>
 </html>
