@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../StyleSheets/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="../StyleSheets/stylesheet.css" />
+    <link type="text/css" rel="stylesheet" href="../StyleSheets/bs4/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=hebrew" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../Index.html"><i class="fa fa-first-order" aria-hidden="true"></i></span> iManage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../Index.html"> Home<span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Manage Users</a>
+            <a class="dropdown-item" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Manage Mailbox</a>
+            <a class="dropdown-item" href="#"><i class="fa fa-server" aria-hidden="true"></i> Manage Server</a>
+            <!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a> -->
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#">disabled</a>
+        </li> -->
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">search</button>
+      </form> -->
+    </div>
+</nav>
+
+                
+    <div class="container jumbotron">
+        <h1>Users</h1>
+
+        <ul>
+            <li>Add new users w/ Mailbox</li>
+            <li>Change user details (Name, BD, start work date...)</li>
+            <li>Duplicate user (delete and create a new user w/ the same details)</li>
+            <li>Delete user (Send email with groups)</li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="container">
+    <div class="card-group">
+        <div class="card">
+            <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+            <i class="fa fa-user-plus card-icon-top fa-5x" aria-hidden="true"></i>
+          <div class="card-body">
+            <h5 class="card-title">Add new users w/ Mailbox</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <!-- <img class="card-img-top" src="..." alt="Card image cap">-->
+          <i class="fa fa-user card-icon-top fa-3x" aria-hidden="true">
+              <i class="fa fa-arrow-right card-icon-top" aria-hidden="true">
+                  <i class="fa fa-user-circle card-icon-top" aria-hidden="true"></i>
+              </i>
+          </i>
+          <div class="card-body">
+            <h5 class="card-title">Change user details</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <!-- <img class="card-img-top" src="..." alt="Card image cap">-->
+          <i class="fa fa-user card-icon-top fa-3x" aria-hidden="true">
+              <i class="fa fa-arrow-right card-icon-top" aria-hidden="true">
+                  <i class="fa fa-user-plus card-icon-top" aria-hidden="true"></i>
+              </i>
+          </i>
+          
+          
+          <div class="card-body">
+            <h5 class="card-title">Duplicate user</h5>
+            <p class="card-text">Duplicate user (delete and create a new user w/ the same details).</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+            <!-- <img class="card-img-top" src="..." alt="Card image cap">-->
+            <i class="fa fa-user-times card-icon-top fa-5x" aria-hidden="true"></i>
+            <div class="card-body">
+              <h5 class="card-title">Delete user</h5>
+              <p class="card-text">Delete user (Send email with groups)</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- # Java scripts section-->
+    <script src="../Scripts/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="../Scripts/bs4/bootstrap.js"></script>
+</body>
+</html>

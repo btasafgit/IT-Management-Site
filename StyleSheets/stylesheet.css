@@ -30,3 +30,10 @@
 .jumbotron{
     margin-top: 70px;
 }
+.card-img-top{
+    max-width: 256px;
+    max-height: 256px;
+    size: 70%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
