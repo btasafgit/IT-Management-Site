@@ -2,6 +2,11 @@
     font-family: 'Varela Round', sans-serif;
 }
 
-h1 {
-    color: purple;
+
+#frame{
+    margin-top: 30px;
+}
+
+p{
+    margin: 100%;
 }
