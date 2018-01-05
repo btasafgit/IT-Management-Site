@@ -31,9 +31,9 @@
     margin-top: 70px;
 }
 .card-img-top{
-    max-width: 256px;
-    max-height: 256px;
-    size: 70%;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    margin-top: 10px; /* Added */
+    max-height: 200px;
 }
